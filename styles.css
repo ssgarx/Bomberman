@@ -1,18 +1,18 @@
-.box1{
-    text-align: center;
-    margin-top: 50px;
+.box1 {
+  text-align: center;
+  margin-top: 20px;
 }
-.headline{
-  font-family: 'Press Start 2P', cursive;
-  color: red;
-  animation:blinkingText 1.2s infinite;
+.headline {
+  font-family: "Press Start 2P", cursive;
+  color: blue;
+  animation: blinkingText 1.2s infinite;
 }
-@keyframes blinkingText{
+/* @keyframes blinkingText{
   0%{     color: black;    }
   49%{    color: red; }
   60%{    color: transparent; }
   99%{    color:transparent;  }
-}
+} */
 .container {
   background: black;
   display: inline-block;
@@ -34,23 +34,52 @@
   font-weight: bold;
   background: white;
 }
-.cell:hover{
-    background: yellow;
-}
-.box2{
-  margin-top: 20px;
+/* .cell:hover {
+  background: yellow;
+} */
+/***************************/
+.box2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
-.start, .end{
-  background-color: red;
-  border: 3px solid black;
-  border-radius: 5%;
+.start, .end {
+  background-color: blue;
+  border: 5px solid black;
+  border-radius: 7%;
   color: black;
-  font-size: 25px;
-  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  font-family: "Press Start 2P", cursive;
   padding: 10px;
 }
-button:hover{
+button:hover {
   background-color: black;
-  color: red;
+  color: blue;
+  border: 5px solid blue;
+}
+/***************************/
+.box3 {
+  text-align: center;
+  display: none;
+}
+.score {
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  background-color: blue;
+  border: 5px solid black;
+}
+.score > p {
+  float: left;
+  width: 50%;
+  font-family: "Press Start 2P", cursive;
+}
+/***************************/
+
+.green{
+  background-color: green;
+}
+.red{
+  background-color: red;
+  background-image: url("https://img.icons8.com/emoji/48/000000/bomb-emoji.png");
 }
