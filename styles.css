@@ -1,0 +1,56 @@
+.box1{
+    text-align: center;
+    margin-top: 50px;
+}
+.headline{
+  font-family: 'Press Start 2P', cursive;
+  color: red;
+  animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+  0%{     color: black;    }
+  49%{    color: red; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+}
+.container {
+  background: black;
+  display: inline-block;
+  border: 5px solid black;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(9, 50px);
+  grid-template-rows: repeat(9, 50px);
+  grid-gap: 5px;
+}
+.cell {
+  /* center the cell content */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-family: Arial;
+  font-size: 3rem;
+  font-weight: bold;
+  background: white;
+}
+.cell:hover{
+    background: yellow;
+}
+.box2{
+  margin-top: 20px;
+  text-align: center;
+}
+.start, .end{
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 5%;
+  color: black;
+  font-size: 25px;
+  font-family: 'Press Start 2P', cursive;
+  padding: 10px;
+}
+button:hover{
+  background-color: black;
+  color: red;
+}
