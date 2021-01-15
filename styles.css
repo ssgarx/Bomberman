@@ -5,14 +5,14 @@
 .headline {
   font-family: "Press Start 2P", cursive;
   color: blue;
-  animation: blinkingText 1.2s infinite;
+  animation: blinkingText 4s infinite;
 }
-/* @keyframes blinkingText{
+@keyframes blinkingText{
   0%{     color: black;    }
   49%{    color: red; }
-  60%{    color: transparent; }
-  99%{    color:transparent;  }
-} */
+  60%{    color: green; }
+  99%{    color:blue;  }
+}
 .container {
   background: black;
   display: inline-block;
@@ -20,8 +20,8 @@
 }
 .grid {
   display: grid;
-  grid-template-columns: repeat(9, 50px);
-  grid-template-rows: repeat(9, 50px);
+  grid-template-columns: repeat(9, 40px);
+  grid-template-rows: repeat(9, 40px);
   grid-gap: 5px;
 }
 .cell {
@@ -51,6 +51,9 @@
   font-size: 20px;
   font-family: "Press Start 2P", cursive;
   padding: 10px;
+}
+.opac{
+  opacity: 50%;
 }
 button:hover {
   background-color: black;
@@ -82,4 +85,19 @@ button:hover {
 .red{
   background-color: red;
   background-image: url("https://img.icons8.com/emoji/48/000000/bomb-emoji.png");
+  animation: blinkingTextr 1.2s infinite;
+}
+@keyframes blinkingTextr{
+  0%{     background-color: red;    }
+  100%{    background-color: transparent; }
+}
+.instr > p{
+  font-family: "Press Start 2P", cursive;
+  text-align: center;
+  display: block;
+  animation: blinkingTextx 0.8s infinite;
+}
+@keyframes blinkingTextx{
+  10%{     color: black;    }
+  100%{    color: transparent; }
 }
